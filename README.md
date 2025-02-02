@@ -28,3 +28,14 @@ React Frontend Setup: Initialized a React application for building the user inte
 Node.js Backend Setup: Set up a simple Node.js server to prepare for API integration in future milestones.
 
 Login Page Development: Create the first user interface of your e-commerce application, focusing on both functionality and styling.
+
+## Milestone 3: Project Setup for Backend
+
+In this milestone, we focused on setting up the backend for our e-commerce application. The key achievements include:
+
+- **Backend Folder Structure**: Organized the backend code into dedicated folders for routes, controllers, models, and middleware.
+- **Server Setup**: Configured a Node.js server using Express to handle API requests and listen on a designated port.
+- **Database Connection**: Integrated MongoDB for efficient data storage and confirmed the connection between the server and MongoDB.
+- **Error Handling**: Implemented basic error handling to provide clear error messages for better debugging and user feedback.
+
+This setup ensures that our backend is well-structured and ready to support the application as it grows.
