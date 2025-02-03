@@ -39,3 +39,13 @@ In this milestone, we focused on setting up the backend for our e-commerce appli
 - **Error Handling**: Implemented basic error handling to provide clear error messages for better debugging and user feedback.
 
 This setup ensures that our backend is well-structured and ready to support the application as it grows.
+
+## Milestone 4: Creating User Model and Controller
+
+In this milestone, we focused on enhancing the backend of our e-commerce application. The key achievements include:
+
+- **User Model**: Created a User Model to define how user data is stored in the database.
+- **User Controller**: Developed a User Controller to manage user-related operations such as adding a new user and retrieving user information.
+- **File Uploads with Multer**: Set up Multer to handle file uploads, allowing users to upload profile images.
+
+This setup ensures that our backend can efficiently manage user data and handle file uploads.
