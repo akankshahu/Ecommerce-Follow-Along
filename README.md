@@ -49,3 +49,24 @@ In this milestone, we focused on enhancing the backend of our e-commerce applica
 - **File Uploads with Multer**: Set up Multer to handle file uploads, allowing users to upload profile images.
 
 This setup ensures that our backend can efficiently manage user data and handle file uploads.
+
+## Milestone 5: Creating the Signup Page
+
+## Objective of Milestone 5:
+
+In this milestone, the primary goal was to create the Sign-Up page for the application. The page allows users to input their details, register for an account, and submit that data to the server. We’ve built a front-end form that includes input fields for Name, Email, and Password, and added form validation to ensure the submitted data is correct and meets basic requirements.
+
+## What Was Accomplished:
+
+Created a Sign-Up Form (Frontend - HTML & CSS):
+The Sign-Up form includes three main fields for the user to input data:
+Name: The user's full name.
+Email: The user’s email address.
+Password: The user’s password for the account.
+Each field is paired with a label, making the form easy to understand and accessible for all users.
+Form Validation (JavaScript):
+Form validation ensures that the data entered by the user meets the expected format before being submitted to the backend.
+The form fields are validated for the following criteria:
+Name Field: Ensures that the name is not left blank and has a value.
+Email Field: Ensures that the email entered is in a valid email format (e.g., example@domain.com).
+Password Field: Checks that the password entered meets the minimum length requirement (6 characters or more).
