@@ -63,10 +63,37 @@ The Sign-Up form includes three main fields for the user to input data:
 Name: The user's full name.
 Email: The user’s email address.
 Password: The user’s password for the account.
-Each field is paired with a label, making the form easy to understand and accessible for all users.
+Each field is paired with a label, making the form e
+asy to understand and accessible for all users.
 Form Validation (JavaScript):
 Form validation ensures that the data entered by the user meets the expected format before being submitted to the backend.
 The form fields are validated for the following criteria:
 Name Field: Ensures that the name is not left blank and has a value.
 Email Field: Ensures that the email entered is in a valid email format (e.g., example@domain.com).
 Password Field: Checks that the password entered meets the minimum length requirement (6 characters or more).
+
+## Milestone 6: What was achieved
+
+- **Password Encryption**: Implemented bcrypt to securely hash passwords before storing them in the database.
+- **Secure User Data Storage**: Created a backend signup route that stores user data (name, email) in MongoDB, ensuring the password is encrypted and never stored in plain text.
+- **Database Setup**: Configured MongoDB and Mongoose to store user data securely.
+
+## User Signup & Password Encryption
+
+### What was achieved:
+
+- Created a backend API for user signup.
+- Integrated bcrypt to hash passwords before storing them in the database.
+- Ensured all user data (name, email, etc.) is stored securely, with passwords never stored in plain text.
+
+### Instructions:
+
+- To start the server, use `npm start`.
+- Make a POST request to `/signup` with the following body:
+  ```json
+  {
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "password": "securepassword123"
+  }
+  ```
