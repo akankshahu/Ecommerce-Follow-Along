@@ -111,3 +111,18 @@ This milestone helps ensure that sensitive information (like passwords) is secur
 ### Next Steps:
 
 In the next milestone, I will focus on enhancing the security of the login process by implementing sessions or JWT for user authentication.
+
+# Milestone 8 - Product Card Component
+
+In this milestone, I created a reusable product card component and displayed multiple product cards on the homepage.
+
+### Achievements:
+
+1. **Card Component**: A card component was created to display product information such as name, price, and image.
+2. **Dynamic Data**: The homepage was updated to dynamically display multiple product cards using an array of product data.
+3. **Grid Layout**: A responsive grid layout was applied to neatly organize the product cards.
+4. **Reusable Design**: The card component is designed to be reusable for various products.
+
+### Next Steps:
+
+In the next milestone, I plan to add features like product filtering, sorting, and integrating the API to fetch products dynamically.
