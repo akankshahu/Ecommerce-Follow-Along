@@ -97,3 +97,17 @@ Password Field: Checks that the password entered meets the minimum length requir
     "password": "securepassword123"
   }
   ```
+  # Milestone 7 - User Login Implementation
+
+In this milestone, I have implemented the user login functionality for the backend. The steps taken are:
+
+1. **Login Endpoint**: I created a POST endpoint `/login` that accepts user credentials (email and password).
+2. **Password Validation**: I used `bcrypt` to compare the hashed password stored in the database with the user's input.
+3. **Error Handling**: If the user doesn't exist or the password is incorrect, appropriate error messages are returned.
+4. **Success**: If the login is successful, a message is returned indicating a successful login.
+
+This milestone helps ensure that sensitive information (like passwords) is securely hashed and compared, adding an important layer of security to the application.
+
+### Next Steps:
+
+In the next milestone, I will focus on enhancing the security of the login process by implementing sessions or JWT for user authentication.
