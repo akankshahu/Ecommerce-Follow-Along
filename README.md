@@ -186,3 +186,49 @@ Admin Authentication: Implement an admin role to restrict product uploads to adm
 User Profiles: Allow users to create and maintain shop profiles, where they can upload and manage their products.
 Product Validation: Add validation on the backend to ensure that product names, prices, and images are valid before saving to the database.
 Product Search and Sorting: In future milestones, we will enhance the product homepage by adding features like filtering and sorting of products based on categories, price range, etc.
+
+## Milestone 10: Product Schema and Endpoint Creation
+
+### What was achieved in this milestone:
+
+In Milestone 10, the following tasks were completed:
+
+1. **Mongoose Product Schema Creation:**
+
+   - Defined the structure of the product data using Mongoose.
+   - Included fields like `name`, `description`, `price`, and `image URL`.
+   - Implemented validation for each field to ensure only valid data is saved to the database.
+
+2. **POST Endpoint for Storing Product Data:**
+
+   - Built a POST endpoint that accepts product data.
+   - Validated the incoming data and stored it in the MongoDB database.
+   - Ensured proper error handling and response messages in case of invalid data.
+
+3. **Validation:**
+   - Ensured that only valid product data is saved to the database by adding validation rules for fields like `name`, `description`, `price`, and `image URL`.
+
+### Key Features Implemented:
+
+- **Product Schema**: Used Mongoose to create the schema with proper data types and validation.
+- **POST Endpoint**: Created an endpoint to receive product details and store them in the database.
+- **Validation**: Ensured that data such as `name` and `price` are required, and that the `image URL` is in a valid format.
+
+### Additional Improvements:
+
+- This milestone provides the foundation for creating an admin access system, allowing only admins to upload products.
+- It also sets up the basic framework for a user shop profile, which can be expanded later on.
+
+### How to Test:
+
+- Run the application locally or in your preferred environment.
+- Use Postman or any API testing tool to send a POST request to `/products` with the following sample JSON body:
+
+```json
+{
+  "name": "Product Name",
+  "description": "Product Description",
+  "price": 19.99,
+  "imageUrl": "https://example.com/image.jpg"
+}
+```
