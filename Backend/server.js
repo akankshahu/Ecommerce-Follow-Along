@@ -1,36 +1,31 @@
-const express = require("express");
-const mongoose = require("mongoose");
-require("dotenv").config();
+const app = require("./app");
 
-const connectToDb = require("./src/config/db");
+const connectDatabase = require("./db/Database");
 
-const port = process.env.PORT || 9090;
-const db_url = process.env.MONGO_URI || "mongodb://localhost:27017/ecommerce";
-
-const app = express();
-app.use(express.json());
-
-const userRoutes = require("./src/routes/userRoutes");
-app.use("/api/users", userRoutes);
-
-app.get("/", (req, res) => {
-  res.send("This is home route");
+process.on("uncaughtException", (err) => {
+    console.log(`Error: ${err.message}`); // Log the error message
+    console.log("Shutting down the server for handling uncaught exception");
+    process.exit(1);
 });
 
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send({
-    message: err.message,
-  });
+if (process.env.NODE_ENV !== "PRODUCTION") {
+    require("dotenv").config({
+        path: "config/.env",
+    });
+}
+
+connectDatabase();
+
+const server = app.listen(process.env.PORT, () => {
+    console.log(
+        `Server is running on http://localhost:${process.env.PORT}` // Log the server's URL
+    );
 });
 
-app.listen(port, async () => {
-  try {
-    await connectToDb(db_url);
-
-    console.log("connected to the database");
-    console.log(`The server is running at the port: http://localhost:${port}`);
-  } catch (err) {
-    console.log(err);
-  }
+process.on("unhandledRejection", (err) => {
+    console.error(`Unhandled Rejection: ${err.message}`); // Log the error message
+    console.log("Shutting down the server due to unhandled promise rejection.");
+    server.close(() => {
+        process.exit(1); 
+    });
 });
