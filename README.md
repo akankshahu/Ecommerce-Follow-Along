@@ -126,3 +126,63 @@ In this milestone, I created a reusable product card component and displayed mul
 ### Next Steps:
 
 In the next milestone, I plan to add features like product filtering, sorting, and integrating the API to fetch products dynamically.
+
+## Milestone 9: Product Form Creation
+
+## Overview
+
+In Milestone 9, we focus on creating a frontend form to handle product details input. This form will allow users to submit multiple images, product information, and store these details for future use in the database. The final product will be displayed on the products home page, which was created in the previous milestone.
+
+       !!! Learning Goals 🎯 !!!
+
+By the end of this milestone, you will:
+
+1> Learn how to create a form that accepts all product details (like name, description, price, etc.).
+
+2> Learn how to handle the submission of multiple images for a product.
+
+3> Understand how to integrate this form with a backend (for example, with a Mongoose schema).
+
+4>Gain experience in implementing user input and managing files in a frontend project.
+
+### Why Create Product Form?
+
+The product form serves as the input interface for adding new products to the ecommerce platform. Without this form, there would be no way to add products to the system. The form will accept various details for each product such as:
+
+Product Name: The name of the product.
+Description: A brief description of the product.
+Price: The price of the product.
+Images: Multiple images representing the product (for display purposes).
+These details will eventually be saved in the database and displayed on the product homepage, which was set up in the previous milestone.
+
+#### Steps Taken in Milestone 9 📝
+
+1. Create the Product Form
+   The core functionality of Milestone 9 revolves around creating a form where users can input all the necessary details about a product. This includes text inputs for product name, price, and description, along with an option to upload multiple images. The form uses the multipart/form-data format to send files (images) to the backend.
+
+Features of the Form:
+Product Name: A text input field for entering the product's name.
+Description: A textarea for entering a detailed description of the product.
+Price: A number input for the price of the product.
+Images: An input field that allows multiple images to be uploaded at once. 2. Handling Multiple Images
+To support multiple image uploads, we utilized an input field with the attribute multiple, which allows the user to select more than one file. These files are then sent to the backend for processing and storage. The backend will store the images and their metadata, which will be linked to the corresponding product in the database.
+
+3. Mongoose Schema for Products
+   We created a Mongoose schema to define the structure of the product object that will be saved in the database. The schema includes the following fields:
+
+name: String - Name of the product.
+description: String - Description of the product.
+price: Number - Price of the product.
+images: Array - List of image URLs related to the product (these images are uploaded and stored in a cloud storage solution). 4. Backend Integration
+We set up an API endpoint to handle the form submission, which saves the product details in the database and stores the images. This backend API processes the uploaded images and stores their URLs in the database.
+
+5. Admin Access (Optional)
+   For future improvements, we discussed how to extend this functionality to allow only admins to upload products. This involves implementing authentication and authorization, ensuring that only users with admin privileges can add new products.
+
+$$ Future Improvements 💡 $$
+As the project continues to evolve, we suggest several potential enhancements to build on Milestone 9:
+
+Admin Authentication: Implement an admin role to restrict product uploads to administrators only.
+User Profiles: Allow users to create and maintain shop profiles, where they can upload and manage their products.
+Product Validation: Add validation on the backend to ensure that product names, prices, and images are valid before saving to the database.
+Product Search and Sorting: In future milestones, we will enhance the product homepage by adding features like filtering and sorting of products based on categories, price range, etc.
