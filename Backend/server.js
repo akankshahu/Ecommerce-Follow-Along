@@ -29,7 +29,7 @@ app.listen(port, async () => {
     await connectToDb(db_url);
 
     console.log("connected to the database");
-    console.log(`The server is running at the port: ${port}`);
+    console.log(`The server is running at the port: http://localhost:${port}`);
   } catch (err) {
     console.log(err);
   }
