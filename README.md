@@ -267,3 +267,40 @@ Building a full-stack application with a backend and frontend communicating via 
 Dynamic Product Display: All product data is displayed on the homepage.
 Backend API: A RESTful API built with Express to fetch all products from MongoDB.
 Frontend Integration: React frontend fetching data from the backend and displaying it dynamically using reusable components.
+
+## Ecommerce Follow-Along - Milestone 12 🎯
+
+Overview 🌟
+
+In Milestone 12, we added the "My Products" page functionality to the ecommerce app. This page displays all products added by the user based on their email. We set up an endpoint to fetch products filtered by the user’s email from the MongoDB database, and then we dynamically display those products on the frontend using the previously created Product Card component.
+
+## What Was Achieved in This Milestone 🎉
+
+Backend 🖥️:
+
+Created an Express endpoint to filter products based on the user's email.
+Retrieved all the products associated with the logged-in user's email from the MongoDB database.
+Frontend 💻:
+
+Wrote a function to call the new backend endpoint and retrieve the products.
+Dynamically displayed the retrieved products in the Product Card component.
+Key Learning Outcomes 📚:
+
+#### How to write an endpoint to filter data by a specific user constraint (email in this case).
+
+How to send and receive data between frontend and backend.
+How to display dynamic content on the frontend using React components (Product Card).
+What You’ll Find in This Repository 🛍️
+Express Server: Contains routes and API for interacting with the MongoDB database.
+Frontend React App: Displays the list of products dynamically using the product card.
+MongoDB: Used to store and retrieve product data, filtered by email.
+Steps Followed in Milestone 12 🚀
+Create an Express Route:
+
+Set up the endpoint /products to get all products associated with the current user’s email from MongoDB.
+Frontend API Call:
+
+Made a call to the new API endpoint from the React frontend to fetch data and display it on the "My Products" page.
+Product Display:
+
+Dynamically passed the product data to the Product Card component for display.
