@@ -232,3 +232,38 @@ In Milestone 10, the following tasks were completed:
   "imageUrl": "https://example.com/image.jpg"
 }
 ```
+
+## Product Display App - Milestone 11 🚀
+
+### Welcome to the Product Display App! This project demonstrates how to build a full-stack application that fetches product data from a MongoDB database and dynamically displays it on the frontend using React. This is the Milestone 11 of the project.
+
+Table of Contents 📚
+Overview
+Learning Goals
+Features
+Installation
+Backend Setup
+Frontend Setup
+How It Works
+Technologies Used
+Submission Guidelines
+Overview 🎯
+
+#### In this milestone, you will:
+
+1> Backend: Set up an Express API endpoint that fetches all product data from MongoDB and sends it to the frontend.
+2> Frontend: Use React to display the fetched product data dynamically using a ProductCard component.
+This project simulates a basic e-commerce website where products are fetched from a backend API and displayed on the homepage.
+
+Learning Goals 🧠
+By the end of this milestone, you will have gained hands-on experience in:
+
+Creating API endpoints in Express to fetch data from a MongoDB database.
+Using React to dynamically render data fetched from an API.
+Building a full-stack application with a backend and frontend communicating via HTTP requests.
+
+### Features ✨
+
+Dynamic Product Display: All product data is displayed on the homepage.
+Backend API: A RESTful API built with Express to fetch all products from MongoDB.
+Frontend Integration: React frontend fetching data from the backend and displaying it dynamically using reusable components.
