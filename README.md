@@ -304,3 +304,49 @@ Made a call to the new API endpoint from the React frontend to fetch data and di
 Product Display:
 
 Dynamically passed the product data to the Product Card component for display.
+
+### Milestone 13: Editing Products in MongoDB 🛍️
+
+Overview 🌟
+->>> In this milestone, we added functionality to edit the details of products in the MongoDB database. The goal was to provide a seamless experience for updating product details both on the frontend and backend.
+
+###### Learning Goals 🎯
+
+By completing this milestone, I learned how to:
+
+Write an endpoint to update existing data in MongoDB.
+Auto-fill a form with existing data for easy editing.
+Integrate frontend functionality with backend API for updating product information.
+What I Did 📝
+1>>>>
+Backend:
+Created an update endpoint in Express to receive new product data and update the corresponding product in MongoDB.
+Utilized MongoDB's findByIdAndUpdate method to modify the product data based on its ID.
+2>>>>
+Frontend:
+Added an Edit button next to each product.
+When the edit button is clicked, the product’s current details are auto-filled in the form.
+Implemented functionality to allow changes to the product details and then update the database after submission.
+
+#### Key Functions Implemented:
+
+Edit Button: An option for users to edit product details.
+Auto-fill Form: The form is pre-filled with the current details of the product when the edit button is clicked.
+Update Endpoint: A backend endpoint that takes the new data and updates the product in MongoDB.
+Technologies Used 🔧
+Node.js: For building the backend.
+Express: To handle HTTP requests.
+MongoDB: To store and manage product data.
+Frontend (HTML/CSS): Basic frontend to display products and handle user interactions.
+JavaScript: For both backend and frontend functionalities.
+🚀
+
+### Challenges Faced 🧩
+
+Data consistency: Ensuring that the data sent from the frontend matches the structure required by MongoDB.
+Form auto-fill: Making sure the form auto-fills correctly with the existing product data and handles the editing seamlessly.
+Future Improvements 🔮
+Validation: Adding form validation to ensure the data entered is correct and complete.
+Error handling: Improving error handling to provide clear messages to the user when something goes wrong.
+Conclusion 🎉
+This milestone was a great exercise in working with MongoDB and building a functional backend that interacts with the frontend. I now have a better understanding of how to implement CRUD operations and connect the frontend with the backend.
