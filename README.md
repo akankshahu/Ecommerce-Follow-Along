@@ -350,3 +350,26 @@ Validation: Adding form validation to ensure the data entered is correct and com
 Error handling: Improving error handling to provide clear messages to the user when something goes wrong.
 Conclusion 🎉
 This milestone was a great exercise in working with MongoDB and building a functional backend that interacts with the frontend. I now have a better understanding of how to implement CRUD operations and connect the frontend with the backend.
+
+###### Follow-along Project - Milestone 14: Modifying Data through API 🚀
+
+->>
+Milestone Overview 📝
+->>>???
+
+In Milestone 14, the goal was to add the functionality to delete a product from the database by integrating a delete button into the product card in the frontend and creating an endpoint in the backend to handle the delete request.
+
+Learning Goals 🎯
+By the end of this milestone, you should have learned:
+
+How to write a backend endpoint that deletes a product from MongoDB by its ID.
+How to add a delete button to the frontend and send the product ID to the backend for deletion. 🖱️
+Milestone Steps 🛠️
+Backend: Creating the Delete Endpoint 💻
+Define the Delete Route: Create an Express.js route that listens for DELETE requests. This route will receive the product ID to delete the corresponding product in MongoDB. 🗑️
+MongoDB Delete Operation: Using the findByIdAndDelete method of MongoDB, the backend will remove the product with the given ID. 🔥
+Error Handling: Ensure appropriate error handling for invalid or missing IDs, or when the product doesn't exist. ⚠️
+Frontend: Delete Button 💡
+Add Delete Button: In the frontend, each product card should have a delete button. 🔴
+Send Delete Request: When the button is clicked, the product ID should be sent to the backend to delete the product. You can use fetch or axios for sending the API request. 🚀
+Update UI: Upon successful deletion, the product should be removed from the displayed list of products. 🔄
