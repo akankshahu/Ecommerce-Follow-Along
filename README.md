@@ -365,11 +365,23 @@ By the end of this milestone, you should have learned:
 How to write a backend endpoint that deletes a product from MongoDB by its ID.
 How to add a delete button to the frontend and send the product ID to the backend for deletion. 🖱️
 Milestone Steps 🛠️
+
+
+
+
 Backend: Creating the Delete Endpoint 💻
+
+
 Define the Delete Route: Create an Express.js route that listens for DELETE requests. This route will receive the product ID to delete the corresponding product in MongoDB. 🗑️
+
 MongoDB Delete Operation: Using the findByIdAndDelete method of MongoDB, the backend will remove the product with the given ID. 🔥
+
 Error Handling: Ensure appropriate error handling for invalid or missing IDs, or when the product doesn't exist. ⚠️
+
+
 Frontend: Delete Button 💡
 Add Delete Button: In the frontend, each product card should have a delete button. 🔴
+
 Send Delete Request: When the button is clicked, the product ID should be sent to the backend to delete the product. You can use fetch or axios for sending the API request. 🚀
+
 Update UI: Upon successful deletion, the product should be removed from the displayed list of products. 🔄
