@@ -385,3 +385,110 @@ Add Delete Button: In the frontend, each product card should have a delete butto
 Send Delete Request: When the button is clicked, the product ID should be sent to the backend to delete the product. You can use fetch or axios for sending the API request. 🚀
 
 Update UI: Upon successful deletion, the product should be removed from the displayed list of products. 🔄
+
+
+
+# 🚀 Milestone 15 - Navbar Component
+
+## 📌 Project Overview
+Welcome to **Milestone 15**! In this step, we have successfully created a **responsive Navbar component** and integrated it across multiple pages in our application. 🎉
+
+## 🎯 Learning Outcomes
+By completing this milestone, we have learned:
+✅ How to create a **Nav component** in React.
+✅ How to **reuse** a component across multiple pages.
+✅ How to make the **Navbar responsive** for all screen sizes.
+✅ How to implement **smooth navigation** between different pages.
+
+## 🛠 Steps Implemented
+1️⃣ **Created a new Navbar component** with links to all essential pages:
+   - 🏠 Home
+   - 📦 My Products
+   - ➕ Add Product
+   - 🛒 Cart
+
+2️⃣ **Ensured Navbar is responsive** for all devices (Mobile, Tablet, Desktop). 📱💻🖥️
+
+3️⃣ **Integrated Navbar component** into all pages.
+
+4️⃣ **Implemented smooth navigation** across all pages for a better user experience. 🔄
+
+## 📂 Project Structure
+```
+📁 src
+ ┣ 📁 components
+ ┃ ┗ 📄 Navbar.jsx
+ ┣ 📁 pages
+ ┃ ┣ 📄 Home.jsx
+ ┃ ┣ 📄 MyProducts.jsx
+ ┃ ┣ 📄 AddProduct.jsx
+ ┃ ┗ 📄 Cart.jsx
+ ┣ 📄 App.jsx
+ ┣ 📄 main.jsx
+```
+
+## 🚀 Tech Stack Used
+- ⚛️ **React.js**
+- ⚡ **Vite**
+- 🎨 **CSS for styling**
+- 📦 **React Router for navigation**
+
+## 📜 How to Run the Project
+1️⃣ Clone the repository:
+```bash
+  git clone <repository-link>
+```
+2️⃣ Navigate to the project directory:
+```bash
+  cd project-folder
+```
+3️⃣ Install dependencies:
+```bash
+  npm install
+```
+4️⃣ Start the development server:
+```bash
+  npm run dev
+```
+
+## 📌 Submission Details
+✅ **Code is pushed** to GitHub. 🔗
+✅ **Repository is public** for review. 👀
+✅ **README updated** to summarize the progress. ✍️
+✅ **Link submitted** in the assignment section. 📤
+
+## 💡 Future Enhancements
+🔹 Improve UI design with better styling.
+🔹 Add animations for smoother transitions.
+🔹 Implement authentication to protect certain routes.
+
+---
+### 🚀 Keep Building & Keep Learning! 💡
+
+
+   🛍️ Product Info Page - Milestone 16
+🚀 Project Overview
+
+Welcome to Milestone 16 of Full Stack Web Development! 🎉
+In this milestone, we built a Product Info Page where users can:
+✅ View product details 📄
+✅ Select quantity 🔢
+✅ Add products to the cart 🛒
+🎯 Learning Goals
+
+By completing this milestone, I have learned:
+✔️ How to create a new page for displaying each product 🖥️
+✔️ How to add a quantity selector ➕➖
+✔️ How to implement an "Add to Cart" button 🛍️
+🏗️ Steps Followed
+
+1️⃣ Created a Product Info Page 📜
+2️⃣ Fetched & displayed product data dynamically 🔄
+3️⃣ Added a quantity selector for user input 🎚️
+4️⃣ Implemented an "Add to Cart" button 🛒
+5️⃣ Styled the page for a smooth user experience 🎨
+🛠️ Tech Stack
+
+    ⚛️ React (Vite)
+    🎨 CSS for styling
+    🔄 useState & useEffect hooks

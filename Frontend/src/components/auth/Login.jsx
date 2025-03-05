@@ -12,11 +12,8 @@ const Login = () => {
     e.preventDefault(); // Prevent the default form submit behavior
     try {
       // Make the POST request to the backend (replace with your actual API endpoint)
-      const response = await axios.post(
-        "http://localhost:8080/api/v2/user/login",
-        { email, password }
-      );
-
+      const response = await axios.post("http://localhost:8000/api/v2/user/login", { email, password });
+      
       // Assuming response contains a token or user data on successful login
       console.log(response.data);
       // Redirect or take some action upon successful login here
@@ -38,10 +35,7 @@ const Login = () => {
         <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
           <form className="space-y-6">
             <div>
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium text-gray-700"
-              >
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                 Email address
               </label>
               <div className="mt-1">
@@ -57,10 +51,7 @@ const Login = () => {
               </div>
             </div>
             <div>
-              <label
-                htmlFor="password"
-                className="block text-sm font-medium text-gray-700"
-              >
+              <label htmlFor="password" className="block text-sm font-medium text-gray-700">
                 Password
               </label>
               <div className="mt-1">
@@ -76,23 +67,13 @@ const Login = () => {
               </div>
             </div>
             <div>
-              <button
-                type="button"
-                onClick={handleSubmit}
-                className="relative w-full h-10 flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
-              >
+            <button type="button" onClick={handleSubmit} className="relative w-full h-10 flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700" >
                 Sign in
               </button>
             </div>
           </form>
-          {error && <p className="text-center text-red-900">{error}</p>}{" "}
-          {/* Display error message if there is one */}
-          <p className="text-center text-red-900">
-            Don't have an account?{" "}
-            <Link to={"/signup"} className="text-blue-600">
-              Sign up
-            </Link>
-          </p>
+          {error && <p className="text-center text-red-900">{error}</p>} {/* Display error message if there is one */}
+                <p className="text-center text-red-900">Don't have an account? <Link to={'/signup'} className="text-blue-600">Sign up</Link></p>
         </div>
       </div>
     </div>
