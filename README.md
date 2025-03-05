@@ -406,3 +406,32 @@ Vite ⚡
 React Router 🛤️
 
 Tailwind CSS 🎨
+
+
+
+
+
+
+
+🎯 Milestone 16 - Product Info Page 🛍️
+
+📌 What was achieved in this milestone? 🏆
+
+In this milestone, we developed a Product Info Page that enhances the user experience by allowing customers to view detailed product information, select the desired quantity, and seamlessly add items to their cart. Below are the key accomplishments:
+
+✅ Created a Product Info Page that displays all product details 📝
+✅ Implemented a quantity selection feature 🔢
+✅ Added an Add to Cart button for effortless shopping 🛒
+✅ Integrated the page seamlessly with the existing app 🔄
+✅ Ensured the design is fully responsive across all devices 📱💻
+✅ Improved user navigation for a smoother experience 🚀
+
+🛠️ Tech Stack Used 🏗️
+
+React ⚛️ - For building the UI components
+
+Vite ⚡ - For fast and optimized development
+
+React Router 🛤️ - For smooth navigation between pages
+
+Tailwind CSS 🎨 - For a modern and responsive design
