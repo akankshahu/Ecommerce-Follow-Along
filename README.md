@@ -385,3 +385,24 @@ Add Delete Button: In the frontend, each product card should have a delete butto
 Send Delete Request: When the button is clicked, the product ID should be sent to the backend to delete the product. You can use fetch or axios for sending the API request. 🚀
 
 Update UI: Upon successful deletion, the product should be removed from the displayed list of products. 🔄
+
+
+#### 🚀 Ecommerce-Follow-Along
+
+🎯 Milestone 15 - Navbar Component
+
+📌 What was achieved in this milestone?
+
+In this milestone, we created a Navbar Component and integrated it into all pages of our Ecommerce application, making navigation smooth and user-friendly. Below are the key accomplishments:
+
+✅ Built a reusable Nav Component 🏗️✅ Added navigation links to: 🏠 Home, 📦 My Products, ➕ Add Product, 🛒 Cart✅ Made the Navbar fully responsive across all screen sizes 📱💻✅ Ensured seamless navigation between pages 🔄✅ Improved user experience with an intuitive interface ✨
+
+🛠️ Tech Stack Used
+
+React ⚛️
+
+Vite ⚡
+
+React Router 🛤️
+
+Tailwind CSS 🎨
