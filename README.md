@@ -486,3 +486,50 @@ In this milestone, we implemented the cart functionality by creating an endpoint
     MongoDB & Mongoose (for database)
     Postman (for API testing)
     Git & GitHub (for version control & submission) 🚀
+
+
+    
+
+
+
+
+
+
+
+    🛒 Milestone 18 - Backend Endpoint for Cart Page
+🚀 Overview
+
+In this milestone, we implemented a backend API endpoint that allows users to retrieve all the products stored in their shopping cart using their email address. This feature is essential for an eCommerce application, as it enables users to view their cart contents seamlessly before proceeding to checkout.
+
+A well-designed cart management system ensures:
+✅ A smooth and seamless user experience.
+✅ Efficient retrieval of cart items with minimal database queries.
+✅ Secure access to user-specific cart data.
+
+🎯 Key Learning Outcomes
+
+Through this milestone, we:
+
+✅ Created an API endpoint to handle frontend requests for cart items.
+✅ Developed a backend route to retrieve a user’s cart products using their email as an identifier.
+✅ Gained a deeper understanding of cart management in real-world eCommerce applications.
+
+This milestone enhances both user experience and backend efficiency, ensuring a reliable shopping cart system. 🚀🛒 Milestone 18 - Backend Endpoint for Cart Page
+🚀 Overview
+
+In this milestone, we implemented a backend API endpoint that allows users to retrieve all the products stored in their shopping cart using their email address. This feature is essential for an eCommerce application, as it enables users to view their cart contents seamlessly before proceeding to checkout.
+
+A well-designed cart management system ensures:
+✅ A smooth and seamless user experience.
+✅ Efficient retrieval of cart items with minimal database queries.
+✅ Secure access to user-specific cart data.
+
+🎯 Key Learning Outcomes
+
+Through this milestone, we:
+
+✅ Created an API endpoint to handle frontend requests for cart items.
+✅ Developed a backend route to retrieve a user’s cart products using their email as an identifier.
+✅ Gained a deeper understanding of cart management in real-world eCommerce applications.
+
+This milestone enhances both user experience and backend efficiency, ensuring a reliable shopping cart system. 🚀
