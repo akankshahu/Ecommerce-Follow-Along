@@ -435,3 +435,54 @@ Vite ⚡ - For fast and optimized development
 React Router 🛤️ - For smooth navigation between pages
 
 Tailwind CSS 🎨 - For a modern and responsive design
+  
+
+
+
+
+
+  🛒 Cart Functionality - Milestone 17
+🚀 Overview
+
+In this milestone, we implemented the cart functionality by creating an endpoint to add products to the cart and store them in a database. This helps in managing user-selected products efficiently.
+📌 Steps Followed
+📝 1. Updated User Schema to Include Cart Products
+
+    Modified the User model to have a cart field.
+    This field is an array that stores the product details added to the cart.
+
+🔗 2. Created a New API Endpoint for Cart
+
+    Built a POST endpoint (/cart/add) to allow users to add products to their cart.
+    The endpoint accepts product details (ID, name, price, quantity, etc.) in the request body.
+
+📦 3. Stored Cart Data in the Database
+
+    Used MongoDB (via Mongoose) to store cart items.
+    When a user adds a product, it gets saved in the database under their user document.
+
+🛠️ 4. Tested API with Postman
+
+    Sent sample requests using Postman to verify the API works correctly.
+    Checked database updates to ensure the cart items are stored properly.
+
+⚡ 5. Handled Errors & Validations
+
+    Implemented error handling for invalid product data.
+    Ensured a user must be logged in to add products to their cart.
+
+📤 6. Pushed Code to GitHub
+
+    Committed all changes and pushed the code to a public GitHub repository.
+    Updated the README file to summarize Milestone 17.
+
+📎 7. Submitted the Repository Link
+
+    Shared the GitHub repository link in the assignment submission section.
+
+✅ Technologies Used
+
+    Node.js & Express.js (for backend)
+    MongoDB & Mongoose (for database)
+    Postman (for API testing)
+    Git & GitHub (for version control & submission) 🚀
