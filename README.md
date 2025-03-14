@@ -590,3 +590,61 @@ In this milestone, we created a frontend page to display the products inside the
 - Add a feature to remove products from the cart.
 
 This milestone enhances the cart functionality, providing a better user experience by allowing users to manage the quantity of products in their cart seamlessly.
+## Milestone 20: Profile Page and User Data Endpoint
+
+### Overview
+
+In this milestone, we created a backend endpoint to retrieve user data and a frontend profile page to display the user's profile information, including their profile photo, name, email, and addresses.
+
+### What Was Achieved
+
+1. **Backend Endpoint**:
+   - Created an endpoint to fetch user data based on their email.
+   - The endpoint retrieves the user's profile photo, name, email, and addresses from the database.
+
+2. **Frontend Profile Page**:
+   - Developed a profile page to display the user's profile photo, name, and email.
+   - Added a section to display the user's addresses.
+   - Included a button labeled "Add Address" for adding new addresses.
+   - Displayed a message "No address found" if the user has no addresses.
+
+### Steps Followed
+
+1. **Backend**:
+   - Added a new route in the backend to handle requests for user data.
+   - Implemented logic to fetch user data from the database based on the provided email.
+   - Ensured proper error handling and validation.
+
+2. **Frontend**:
+   - Created a new `Profile.jsx` component to display the user's profile information.
+   - Used state management to handle the fetched user data.
+   - Made an API call to the backend endpoint to retrieve user data.
+   - Displayed the user's profile photo, name, and email in one section.
+   - Displayed the user's addresses in another section with an "Add Address" button.
+   - Showed a message "No address found" if the user has no addresses.
+
+### How to Test
+
+1. **Run the Application**:
+   - Start the backend server using `npm start`.
+   - Start the frontend development server using `npm run dev`.
+
+2. **Test the Profile Page**:
+   - Navigate to the profile page in the application.
+   - Verify that the user's profile photo, name, and email are displayed correctly.
+   - Check that the user's addresses are displayed correctly.
+   - Ensure that the "Add Address" button is functional.
+   - Verify that the message "No address found" is displayed if the user has no addresses.
+
+### Technologies Used
+
+- **Frontend**: React, Tailwind CSS
+- **Backend**: Node.js, Express, MongoDB, Mongoose
+
+### Future Improvements
+
+- Add functionality to update the user's profile photo, name, and email.
+- Implement user authentication to ensure that only logged-in users can access the profile page.
+- Add a feature to edit and delete addresses.
+
+This milestone enhances the user experience by providing a comprehensive profile page that displays the user's information and allows for address management.
