@@ -533,3 +533,60 @@ Through this milestone, we:
 ✅ Gained a deeper understanding of cart management in real-world eCommerce applications.
 
 This milestone enhances both user experience and backend efficiency, ensuring a reliable shopping cart system. 🚀
+## Milestone 19: Cart Page and Quantity Management
+
+### Overview
+
+In this milestone, we created a frontend page to display the products inside the cart and added functionality to increase and decrease the quantity of each product. We also wrote backend endpoints to handle the quantity updates.
+
+### What Was Achieved
+
+1. **Cart Page UI**:
+   - Created a new cart page that displays the products inside the cart using the endpoint built in Milestone 18.
+   - Each product in the cart is displayed with its name, price, quantity, and total cost.
+
+2. **Quantity Management**:
+   - Added `+` and `-` buttons for each product to increase and decrease the quantity.
+   - Implemented functionality to update the quantity in the frontend when the buttons are clicked.
+
+3. **Backend Endpoints**:
+   - Created a backend endpoint to increase the quantity of a product in the cart.
+   - Created a backend endpoint to decrease the quantity of a product in the cart.
+   - Ensured that the quantity cannot go below 1.
+
+### Steps Followed
+
+1. **Frontend**:
+   - Created a new `Cart.jsx` component to display the cart items.
+   - Used state management to handle the quantity updates.
+   - Made API calls to the backend endpoints to update the quantity in the database.
+
+2. **Backend**:
+   - Added new routes in the backend to handle the quantity updates.
+   - Implemented logic to increase and decrease the quantity of a product in the cart.
+   - Ensured proper error handling and validation.
+
+### How to Test
+
+1. **Run the Application**:
+   - Start the backend server using `npm start`.
+   - Start the frontend development server using `npm run dev`.
+
+2. **Test the Cart Page**:
+   - Navigate to the cart page in the application.
+   - Verify that the products are displayed correctly.
+   - Use the `+` and `-` buttons to increase and decrease the quantity of each product.
+   - Ensure that the total cost is updated correctly.
+
+### Technologies Used
+
+- **Frontend**: React, Tailwind CSS
+- **Backend**: Node.js, Express, MongoDB, Mongoose
+
+### Future Improvements
+
+- Add validation to ensure that the quantity does not exceed available stock.
+- Implement user authentication to ensure that only logged-in users can access the cart.
+- Add a feature to remove products from the cart.
+
+This milestone enhances the cart functionality, providing a better user experience by allowing users to manage the quantity of products in their cart seamlessly.
