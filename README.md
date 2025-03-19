@@ -625,7 +625,81 @@ In this milestone, we created a backend endpoint to retrieve user data and a fro
 
 ### How to Test
 
-1. **Run the Application**:
+1. **Run the Application**:Logo
+Livebooks
+Backend Web Development [V2]
+Deploying your API, local and prod[V2]
+Follow-along project milestone #5
+Score 60% or more to mark this assignment as completed
+Your recent submission was not upto the mark. Please check your report under ‘Your Attempts’ and resubmit.
+
+Certified Score
+
+5
+/10
+Your Attempts
+Hey Kalvians!
+
+Welcome to Milestone 5! 🌟
+
+You’ve made fantastic progress so far, and in this milestone, we’re going to take your app even further! This time, we’ll focus on building the Sign-Up Page on the frontend and setting up routes to handle the user sign-up process smoothly.
+
+If some of the concepts feel new, don’t worry! We’ll break everything down so it’s easy to follow and understand step by step.
+
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+You will create the frontend UI for users to register by filling out their details.
+We’ll ensure that user inputs (like email and password) are properly validated before they’re submitted. Update the README file: Don’t forget to document what you’ve accomplished!
+1. What’s a Sign-Up page?
+The Sign-Up page is where users can enter their details to create an account. This page will typically include fields like:
+Name
+Email
+Password
+This page allows users to provide their information, which will be sent to the server for processing.
+We’ll create a simple yet effective sign-up form that looks clean and is user-friendly.
+2. What is Form validation?
+Form Validation ensures that the information users provide is correct and in the right format.
+For instance, we’ll check if the email is in the correct format and if the password meets certain security criteria (e.g., minimum length).
+Form validation helps prevent errors and ensures that the backend receives clean and valid data.
+Steps for Milestone 5 📝
+In this milestone, you will work on the frontend while your mentor will guide you through:
+Building the Sign-Up Page with HTML and CSS.
+Adding form validation to ensure users input valid data.
+In case you missed the mentor-led session, don’t worry! You can always go through the content and reach out to your mentor for help on any coding aspects.
+
+Submission Guidelines 📥
+Once you’ve completed these steps:
+Push your code to the same GitHub repository you’ve used for previous milestones.
+Make sure your repository is publicly accessible.
+Update your README file with a new section summarizing your progress for Milestone 5.
+Share the repository link in the assignment provided below.
+Next steps 🚀
+In the next milestone, we’ll continue building out advanced features for your app, including connecting the front-end with the backend and managing user sessions! Keep up the great work, and as always, feel free to reach out to your mentor if you have any questions.
+
+Good luck, Kalvians! ✨
+
+Take this assignment to show your understanding of the topics you have learned.
+
+Max. Duration:
+1 hr
+How did you like this assignment?
+
+Not Good
+
+Okayish
+
+Good
+
+Very Good
+
+Previous
+
+Deploying your API - Practice assignment #2
+Next
+
+Follow-along project milestone #6
+Submitted on 8 Feb 2025, 05:51 pm
    - Start the backend server using `npm start`.
    - Start the frontend development server using `npm run dev`.
 
@@ -648,3 +722,29 @@ In this milestone, we created a backend endpoint to retrieve user data and a fro
 - Add a feature to edit and delete addresses.
 
 This milestone enhances the user experience by providing a comprehensive profile page that displays the user's information and allows for address management.
+
+
+
+
+
+
+
+📌 Milestone 21 - Address Form Frontend 🚀
+🏆 Learning Goals
+
+By completing this milestone, I have learned how to:
+✅ Create a frontend form for address input 🏡
+✅ Store user input in the component's state 💾
+✅ Navigate to the address form page from the profile section 🔄
+🛠️ Steps Implemented
+
+1️⃣ Designed an address form with fields for:
+
+    Country 🌍
+    City 🏙️
+    Address Line 1 🏠
+    Address Line 2 🏢
+    Zip Code 🔢
+    Address Type 📌
+    2️⃣ Managed input values using React state ⚛️
+    3️⃣ Handled form submission and navigation 📩
