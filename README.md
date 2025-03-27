@@ -778,3 +778,73 @@ Updated the user collection by adding the address inside the address array.
 Tested the endpoint using Postman and frontend integration.
 
 Committed & Pushed changes to the GitHub repository.
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🚀 Milestone 23: Implementing Place Order Functionality 🛒
+
+📌 Overview
+
+In this milestone, we have implemented the Place Order functionality in our React app. We have created a Select Address page and written a Mongoose schema for storing order details in the backend.
+
+🎯 Features Implemented
+
+🖥️ Frontend:
+
+✅ Added a "Place Order" button inside the Cart Page.
+✅ Created a Select Address Page to display available addresses and allow the user to select one.
+
+🛠️ Backend:
+
+✅ Implemented an API endpoint to fetch user addresses.
+✅ Created a Mongoose schema for storing order details.
+
+📝 Steps Implemented
+
+Frontend (React)
+
+🛍️ Added Place Order Button:
+
+Located inside the Cart Page.
+
+Navigates to the Select Address page upon clicking.
+
+📍 Created Select Address Page:
+
+Fetches and displays all available addresses.
+
+Allows the user to select an address.
+
+Backend (Node.js + Express + MongoDB)
+
+📦 Created Order Schema:
+
+Stores user ID, selected address, order items, and status.
+
+🔗 Implemented API to Fetch Addresses:
+
+Returns all addresses for the logged-in user.
