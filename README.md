@@ -749,4 +749,32 @@ By completing this milestone, I have learned how to:
     2️⃣ Managed input values using React state ⚛️
     3️⃣ Handled form submission and navigation 📩
 
+
+
     
+
+    🚀 Milestone 22: Adding Address to User Profile
+
+📌 Overview
+
+In this milestone, we implemented a backend endpoint to store user addresses in the database. The address will be saved inside the user's profile as part of the address array in the user collection.
+
+🎯 Learning Goals
+
+✅ Create a backend endpoint to store the address inside the user profile.
+
+✅ Understand how to handle form data from the frontend.
+
+✅ Update the user collection with the new address.
+
+🛠️ Steps Implemented
+
+Created an API endpoint to receive the address from the frontend form.
+
+Validated and processed the address before storing it in the database.
+
+Updated the user collection by adding the address inside the address array.
+
+Tested the endpoint using Postman and frontend integration.
+
+Committed & Pushed changes to the GitHub repository.
