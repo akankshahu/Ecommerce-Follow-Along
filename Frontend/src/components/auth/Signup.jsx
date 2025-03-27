@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { RxAvatar } from "react-icons/rx";
 import axios from "axios";
 import ValidationFormObject from "../../validation";
+import { useDispatch } from 'react-redux';
+import { setemail } from "../../store/userActions";
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
@@ -43,19 +45,19 @@ const Signup = () => {
     const config = {
       headers: {
         "Content-Type": "multipart/form-data",
-        Accept: "any",
+        "Accept": "any",
       },
     };
-    // Axios request to backend
-    axios
-      .post("http://localhost:8080/api/v2/user/create-user", newForm, config)
-      .then((res) => {
-        console.log(res.data); // Success response from server
-      })
-      .catch((err) => {
-        console.error(err.response ? err.response.data : err.message); // Error handling
-      });
-  };
+ // Axios request to backend
+ axios
+ .post("http://localhost:8000/api/v2/user/create-user", newForm, config)
+ .then((res) => {
+   console.log(res.data); // Success response from server
+ })
+ .catch((err) => {
+   console.error(err.response ? err.response.data : err.message); // Error handling
+ });
+};
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
@@ -183,8 +185,7 @@ const Signup = () => {
             </div>
             <div>
               <button
-                type="submit"
-                onClick={handleSubmit}
+                type="submit" onClick={handleSubmit}
                 className="group relative w-full h-[40px] flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
               >
                 Submit
