@@ -916,17 +916,37 @@ By completing this milestone, we learned how to:
 
 ---
 
-### 📝 How to Test
-
-1️⃣ **Run the Application**:  
-   Start the frontend development server using:  
-   ```bash
-   npm run dev
 
 
+# 📌 Milestone 25 - Placing an Order Backend Endpoint
 
+## 🎯 Learning Goals
+By completing this milestone, you will:
+- ✅ Create a backend endpoint to place an order.
+- ✅ Retrieve user details using their email.
+- ✅ Store order details in the MongoDB `orders` collection.
+- ✅ Understand how to process and save multiple products as separate orders with the same address.
 
+---
 
+## 📝 Steps to Implement
+1️⃣ **Create an endpoint** that receives:
+   - Products 📦
+   - User email 📧
+   - Address details 🏠
 
+2️⃣ **Retrieve user ID** using the email from the `users` collection. 👤
 
+3️⃣ **Store each product as a separate order** but with the same address in MongoDB. 🗄️
+
+4️⃣ **Use the Order Schema** created earlier to save order details in the `orders` collection. 📜
+
+5️⃣ **Return a success response** upon order placement. 🎉
+
+---
+
+## 🛠️ Technologies Used
+- **Backend:** Node.js, Express.js 🚀
+- **Database:** MongoDB, Mongoose 🗃️
+- **Frontend:** React.js ⚛️
 
