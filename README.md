@@ -950,3 +950,49 @@ By completing this milestone, you will:
 - **Database:** MongoDB, Mongoose 🗃️
 - **Frontend:** React.js ⚛️
 
+
+## 🚀 Milestone 26: Fetching User Orders Backend Endpoint 🛒
+
+### 📌 Overview
+
+In this milestone, we implemented a **backend endpoint** to fetch all orders placed by a specific user. This endpoint retrieves the user's orders from the database using their email and returns the order details in the response.
+
+---
+
+### 🎯 Learning Goals
+
+By completing this milestone, we learned how to:
+
+✅ Create a backend endpoint to fetch user-specific orders.  
+✅ Retrieve the user ID (`_id`) using their email.  
+✅ Query the database to fetch all orders associated with the user.  
+✅ Send the retrieved orders as a response to the client.  
+
+---
+
+### 🛠️ Steps Implemented
+
+1️⃣ **Created the Backend Endpoint**:  
+   - Built a GET endpoint `/api/v2/order/get-orders` to fetch user orders.  
+   - The endpoint accepts the user's email as a query parameter.  
+
+2️⃣ **Retrieved User ID**:  
+   - Used the email provided in the request to fetch the `_id` of the user from the `users` collection.  
+
+3️⃣ **Fetched User Orders**:  
+   - Queried the `orders` collection using the retrieved user ID.  
+   - Retrieved all orders associated with the user.  
+
+4️⃣ **Sent Response**:  
+   - Returned the list of orders in the response, including details like product, quantity, address, and status.  
+
+5️⃣ **Tested the Endpoint**:  
+   - Used **Postman** to test the endpoint with sample data.  
+   - Verified that the correct orders were retrieved and returned in the response.  
+
+---
+
+### 📝 How the Endpoint Works
+
+1️⃣ **Request**:  
+   The endpoint accepts the user's email as a query parameter:  
