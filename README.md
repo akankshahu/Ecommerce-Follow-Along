@@ -848,3 +848,85 @@ Stores user ID, selected address, order items, and status.
 🔗 Implemented API to Fetch Addresses:
 
 Returns all addresses for the logged-in user.
+
+
+
+
+
+
+
+
+
+
+
+## 🚀 Milestone 24: Order Confirmation Page 🛒
+
+### 📌 Overview
+
+In this milestone, we created an **Order Confirmation Page** in the frontend. This page displays the products being ordered, the selected delivery address, and the total price of the cart. It also includes a "Place Order" button to finalize the order.
+
+---
+
+### 🎯 Learning Goals
+
+By completing this milestone, we learned how to:
+
+✅ Display a summary of the products being ordered.  
+✅ Show the selected delivery address for the order.  
+✅ Calculate and display the total price of the cart.  
+✅ Add a "Place Order" button to finalize the order.  
+
+---
+
+### 🛠️ Steps Implemented
+
+1️⃣ **Display Ordered Products**:  
+   - Fetched the list of products being ordered from the cart.  
+   - Displayed each product with its name, quantity, and price.  
+
+2️⃣ **Show Selected Address**:  
+   - Retrieved the selected delivery address from the user's profile.  
+   - Displayed the address details, including country, city, and zip code.  
+
+3️⃣ **Calculate Total Price**:  
+   - Calculated the total price of all products in the cart.  
+   - Displayed the total price prominently on the page.  
+
+4️⃣ **Add Place Order Button**:  
+   - Added a "Place Order" button at the bottom of the page.  
+   - Clicking the button navigates to the backend endpoint to place the order.  
+
+---
+
+### 🖥️ How the Order Confirmation Page Works
+
+1️⃣ **Products Section**:  
+   - Displays all the products being ordered.  
+   - Includes product name, quantity, and price for each item.  
+
+2️⃣ **Address Section**:  
+   - Shows the selected delivery address.  
+   - Includes details like country, city, address lines, and zip code.  
+
+3️⃣ **Total Price Section**:  
+   - Displays the total price of all items in the cart.  
+
+4️⃣ **Place Order Button**:  
+   - Finalizes the order and navigates to the backend for order placement.  
+
+---
+
+### 📝 How to Test
+
+1️⃣ **Run the Application**:  
+   Start the frontend development server using:  
+   ```bash
+   npm run dev
+
+
+
+
+
+
+
+
